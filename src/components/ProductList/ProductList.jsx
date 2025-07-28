@@ -7,7 +7,7 @@ import { OrbitProgress } from 'react-loading-indicators'
 export default function ProductList({ products }) {
     return (
         <div className="container">
-            {products.length !== 0 ?
+            {products !== null ?
                 <div className="product-grid">{
                     products.map((product) => {
                         return (
