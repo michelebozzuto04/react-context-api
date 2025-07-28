@@ -11,13 +11,13 @@ function GlobalProvider({ children }) {
 
 
     useEffect(() => {
-
         fetch(url)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
                 setProducts(data);
             })
+            .catch(error => console.log(error))
     }, [])
 
 
